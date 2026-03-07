@@ -1,11 +1,6 @@
 pipeline {
   agent any
 
-  tools {
-    // Nécessite que NodeJS soit configuré dans Jenkins (Global Tool Configuration)
-    nodejs 'NodeJS'
-  }
-
   stages {
     stage('Checkout') {
       steps {
